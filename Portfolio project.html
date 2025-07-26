@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhivesh RJ | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    * {
+      cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur835.cur'), auto;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Merriweather', serif;
+      background-color: #DA291C;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: linear-gradient(to right, #002E6E, #DA291C);
+      color: #FFD700;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      text-shadow: 2px 2px 5px black;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      background-color: #002E6E;
+      color: #FFF8DC;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    nav a:hover {
+      background-color: #FFD700;
+      color: #002E6E;
+      transform: scale(1.1);
+    }
+
+    .about {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .about h2 {
+      color: #FFD700;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: auto;
+      color: #FFF8DC;
+      font-size: 1.1rem;
+    }
+
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid #FFD700;
+      white-space: nowrap;
+      margin: auto;
+      letter-spacing: .05em;
+      animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+      max-width: fit-content;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #FFD700; }
+    }
+
+    .experience {
+      padding: 40px 20px;
+      background: #002E6E;
+      color: #FFF8DC;
+    }
+
+    .experience h2 {
+      text-align: center;
+      color: #FFD700;
+    }
+
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #DA291C;
+      color: white;
+      box-shadow: 0 0 10px black;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #FFD700;
+      text-align: center;
+    }
+
+    th {
+      background-color: #FFD700;
+      color: #002E6E;
+    }
+
+    .badge {
+      background-color: #FCEBB1;
+      color: #002E6E;
+      padding: 5px 10px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+
+    footer {
+      background-color: #002E6E;
+      color: #FFF8DC;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Scroll to Top Button */
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #FFD700;
+      color: #002E6E;
+      cursor: pointer;
+      padding: 12px 18px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    #topBtn:hover {
+      background-color: #DA291C;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="https://dhivesh-rj.github.io/Portfolio/projects.html">Projects</a>
+      <a href="https://www.linkedin.com/in/dhiveshrj/" target="_blank">LinkedIn</a>
+      <a href="Dhivesh RJ Resume.pdf" target="_blank">Resume</a>
+    </nav>
+  </header>
+
+  <section class="about" data-aos="fade-up">
+    <h2>Dhivesh RJ</h2>
+    <p id="role-description" class="highlighted-text">Team Lead | Mentor | Passionate About Tech & Data | KPI & QA Data Analysis | Excel & MS Office Expert</p>
+  </section>
+  <section class="experience" data-aos="zoom-in">
+    <h2>Experience</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Designation</th>
+          <th>Year</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vedantu</td>
+          <td><span class="badge">Academic Mentor</span></td>
+          <td>2025</td>
+          <td>Coimbatore</td>
+        </tr>
+        <tr>
+          <td>Focus Edumatics</td>
+          <td><span class="badge">Team Lead</span></td>
+          <td>2022–2025</td>
+          <td>Coimbatore</td>
+        </tr>
+        <tr>
+          <td>Focus Edumatics</td>
+          <td><span class="badge">Online Tutor</span></td>
+          <td>2018–2021</td>
+          <td>Coimbatore</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>📫 Contact: <a href="mailto:dhivesh.rj@gmail.com">dhivesh.rj@gmail.com</a> | 📍 Location: Coimbatore</p>
+    <p>&copy; 2025 Dhivesh RJ | Made with ❤️ in RCB Style</p>
+  </footer>
+
+  <button id="topBtn" title="Go to top">↑</button>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Scroll-to-top button
+    let mybutton = document.getElementById("topBtn");
+    window.onscroll = function () {
+      mybutton.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+    };
+    mybutton.onclick = function () {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    };
+  </script>
+
+</body>
+</html>
